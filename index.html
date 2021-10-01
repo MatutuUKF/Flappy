@@ -6,6 +6,10 @@
     <title>Unity WebGL Player | TappyBallShit</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -16,9 +20,16 @@
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-      <div id="unity-mobile-warning">
-        WebGL builds are not supported on mobile devices.
-      </div>
+        
+      
+      <script>
+      setTimeout(function(){
+      $("#unityContainer").find("button").click();
+      },2000);   
+      
+      </script>
+
+
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
